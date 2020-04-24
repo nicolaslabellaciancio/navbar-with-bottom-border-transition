@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Ropa+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Ropa Sans', sans-serif;
+}
+
+nav {
+    /* background-color: #333333; */
+    background-color: hsl(0, 0%, 15%);
+    box-shadow: 0 3px 7px #171717;
+    width: 100%;
+}
+
+ul {
+    display: flex;
+    margin: 0 auto;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    position: relative;
+    text-align: center;
+    list-style: none;
+}
+
+ul li {
+    text-transform: uppercase;
+    font-size: 1.5em;
+    letter-spacing: 1px;
+    padding: 20px;
+    transition: 0.15s linear;
+    color: rgba(255, 255, 255, 0.75);
+    margin-left: 10px;
+}
+
+ul li:hover {
+    cursor: pointer;
+}
+
+.active {
+    color: #fff;
+    background-color: hsl(0, 0%, 18%);
+}
+
+.underline {
+    position: absolute;
+    height: 4px;
+    left: 10px;
+    bottom: 0;
+    display: block;
+    z-index: 3;
+    background: rgb(255, 255, 255);
+    transition: .2s ease-in-out;
+}
